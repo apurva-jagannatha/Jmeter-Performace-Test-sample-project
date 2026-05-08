@@ -54,3 +54,39 @@ Assertions:
 .\jmeter.bat -n -t PerformaceTestProjectSample.jmx -l results.csv
 
 .\jmeter.bat -g results.csv -o html-report
+
+# How to Execute
+
+## Prerequisites
+- Java Installed
+- Apache JMeter Installed
+- Set JAVA_HOME
+- Add JMeter bin folder to PATH
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+## Navigate to Project Folder
+
+```bash
+cd your-repo-name
+```
+
+## Run JMeter Test
+
+```bash
+jmeter -n -t TestPlan.jmx -l result.jtl
+```
+
+## Generate HTML Report
+
+```bash
+jmeter -g result.jtl -o HTMLReport
+```
+
+## Open Report
+
+Open `index.html` inside the `HTMLReport` folder.
